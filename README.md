@@ -1,5 +1,5 @@
 # IVF_MetaAnalysis_Repo
- All project scripts and plots for IVF meta-analysis 2024 publication
+ All project scripts and plots for IVF meta-analysis 2024 publication - order of read me is the order scipts should be run
 
 ## ExtractingMetadata_and_MakingSeriesDirectories.R 
 Extract clinical and technical data for all samples in GEO data sets using GEOquery 
