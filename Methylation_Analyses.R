@@ -344,7 +344,7 @@ male_X <- ggplot(data = placmet_M_fulldata_X, aes(x = deltaB, y = -log10(adj.P.V
   geom_point(shape = 19, alpha = 0.4, size = 3) +
   geom_text_repel(max.overlaps = Inf) +
   theme_bw() +
-  ylab(" ") +
+  ylab("-log10(adjusted P.Value)") +
   theme(axis.text = element_text(size = 12.5),
         axis.title = element_text(size = 14)) +
   xlab("Delta Beta") +
@@ -382,12 +382,15 @@ male_Y <- ggplot(data = placmet_M_fulldata_Y, aes(x = deltaB, y = -log10(adj.P.V
   geom_hline(yintercept = c(-log10(0.05)), col = "gray", linetype = "dashed", linewidth = 0.75) +
   geom_point(shape = 19, alpha = 0.4, size = 3) + 
   theme_bw() +
-  ylab(" ") +
+  ylab("-log10(adjusted P.Value)") +
   theme(axis.text = element_text(size = 12.5),
         axis.title = element_text(size = 14)) +
-  xlab(bquote(atop("Delta Beta", "(n=294)"))) +
+  xlab("Delta Beta") +
   scale_y_continuous(breaks = seq(0, 3, by = 0.5), limits = c(0, 3)) +
-  scale_x_continuous(breaks = seq(-0.2, 0.2, by = 0.1)) +
+  scale_x_continuous(breaks = seq(-0.2, 0.2, by = 0.1), limits = c(-0.2, 0.2)) +
   scale_color_manual(values = c("black", "#FFB518", "#0C7BDC"), 
                      labels = c("Not Biologically Significant", "Hyper-methylated", "Hypo-methylated"),
                      guide = "none")
+png("./Y_vol_adjFunnorm.png", height = 9, width = 5, units = "in", res = 300)
+male_Y
+dev.off()
