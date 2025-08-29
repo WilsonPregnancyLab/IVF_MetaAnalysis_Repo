@@ -20,3 +20,7 @@ Extract clinical and technical data for all samples in GEO data sets using GEOqu
 ## Linear_Model_Validation.R
 1. Runs models outline in the sensitivity analysis: Excluding study with greatest imbalance, Robust = TRUE
 2. Build table with top 15 significant CpGs of the linear model sensitivity analysis + original model 
+
+## Cell_Deconvolution.R
+1. Runs placental cell deconvolution for samples stratified by conception type and fetal sex and gives proportions of trophoblasts, syncytiotrophoblasts, stromal cells, endothelial cells, Hoffbauer cells, and nRBCs
+
