@@ -35,3 +35,8 @@ Extract clinical and technical data for all samples in GEO data sets using GEOqu
 3. Create delta beta tables and volcano plots for cell adjusted model
 4. Create a table showing the overlap of results between cell unadjusted and cell adjusted linear models of autosomes in combined fetal sex, male, and female strata
 
+## Inflation_Analysis.R
+1. Run inflation analysis that calculates inflation lambda scores in cell adjusted and cell unadjusted linear models in fetal sex strata
+2. Completed in autosomes and in cell deconvolution probes separately 
+3. Create QQ plots 
+
