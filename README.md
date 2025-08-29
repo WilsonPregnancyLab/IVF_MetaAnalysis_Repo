@@ -24,3 +24,7 @@ Extract clinical and technical data for all samples in GEO data sets using GEOqu
 ## Cell_Deconvolution.R
 1. Runs placental cell deconvolution for samples stratified by conception type and fetal sex and gives proportions of trophoblasts, syncytiotrophoblasts, stromal cells, endothelial cells, Hoffbauer cells, and nRBCs
 
+## Comparing_CellType.R
+1. Runs separate models to compare fetal sex in stratified conception types, and conception type stratified by fetal sex 
+2. Runs a mixed effects model for both conception type and fetal sex 
+3. Plots proportions for each cell type across conception type and fetal sex strata
