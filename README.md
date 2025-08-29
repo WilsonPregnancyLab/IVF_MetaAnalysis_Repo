@@ -17,3 +17,6 @@ Extract clinical and technical data for all samples in GEO data sets using GEOqu
 1. Creates all necessary tables for calculating delta betas and formatting to include thresholds of biological significance cutoffs
 2. Plots all CpGs in volcano plots for Autosome, X chromosome, and Y chromosome linear model results
 
+## Linear_Model_Validation.R
+1. Runs models outline in the sensitivity analysis: Excluding study with greatest imbalance, Robust = TRUE
+2. Build table with top 15 significant CpGs of the linear model sensitivity analysis + original model 
