@@ -1,5 +1,5 @@
 # IVF_MetaAnalysis_Repo
- All project scripts and plots for IVF meta-analysis 2024 publication - order of read me is the order scipts should be run
+ All project scripts and plots for IVF meta-analysis 2025 publication - order of read me is the order scipts should be run
 
 ## ExtractingMetadata_and_MakingSeriesDirectories.R 
 Extract clinical and technical data for all samples in GEO data sets using GEOquery 
@@ -7,6 +7,9 @@ Extract clinical and technical data for all samples in GEO data sets using GEOqu
 ## Filtering_and_Normalization.R 
 1. Complete sex prediction comparison quality control
 2. load in all datasets and normalize using adjustedFunnorm
-3. filtering step -> remove pood performing probes (bad p values, missing B values), SNP probes, crosshybridizing probes, and non-variable placental probes
+3. filtering step -> remove poor performing probes (bad p values, missing B values), SNP probes, crosshybridizing probes, and non-variable placental probes
 
+## DNAMethylation_Analysis.R
+1. Load in beta values for samples and separate probes by autosomes, X chromosomes, and Y chromosomes
+2. Run linear models on M values - comparing IVF to spontnaoues in mixed fetal sex, male, and female strata 
 
