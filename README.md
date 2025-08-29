@@ -28,3 +28,10 @@ Extract clinical and technical data for all samples in GEO data sets using GEOqu
 1. Runs separate models to compare fetal sex in stratified conception types, and conception type stratified by fetal sex 
 2. Runs a mixed effects model for both conception type and fetal sex 
 3. Plots proportions for each cell type across conception type and fetal sex strata
+
+## Cell_Adjusted_Linear_Models.R
+1. Run linear model using same methodology as DNAMethylation_Analysis.R but only for probes used in the cell deconvolution methodology 
+2. Rerun original linear model on all autosomes including proportions of cell type as effects in the linear model 
+3. Create delta beta tables and volcano plots for cell adjusted model
+4. Create a table showing the overlap of results between cell unadjusted and cell adjusted linear models of autosomes in combined fetal sex, male, and female strata
+
