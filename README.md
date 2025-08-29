@@ -40,3 +40,6 @@ Extract clinical and technical data for all samples in GEO data sets using GEOqu
 2. Completed in autosomes and in cell deconvolution probes separately 
 3. Create QQ plots 
 
+## Supplementary_Table_Code.R
+1. Build supplementary table 2 and table 3 
+2. Find overlap of our results compared to Auvinen et.al. 2025
